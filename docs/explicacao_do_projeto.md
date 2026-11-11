@@ -45,7 +45,7 @@ A rede possui três partes:
 2. **Camada oculta (8):** contém oito neurônios e utiliza ReLU.
 3. **Saída (3):** produz uma probabilidade para cada espécie por meio da Softmax.
 
-Os pesos representam a intensidade das conexões. Os vieses permitem ajustar a saída de cada neurônio.
+Os pesos representam a intensidade das conexões. Os vieses permitem ajustar a saída de cada neurônio. No início, os pesos são gerados aleatoriamente: utiliza-se inicialização He na camada ReLU e Xavier na camada de saída. Os dois conjuntos de vieses também são inicializados aleatoriamente, com distribuição normal de média zero e desvio padrão 0,01. A semente fixa permite repetir a mesma inicialização nas execuções.
 
 ## 6. Funções matemáticas
 
