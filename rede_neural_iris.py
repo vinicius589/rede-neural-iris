@@ -262,7 +262,7 @@ def plotar_matriz_confusao(matriz, nomes_classes, caminho):
     eixo.set_xlabel("Espécie prevista pela rede")
     eixo.set_ylabel("Espécie correta")
     eixo.set_xticks(range(len(nomes_classes),), nomes_classes)
-    eixo.set_yticks(range(len(nomes_classes)), nomes_classes)es)
+    eixo.set_yticks(range(len(nomes_classes)), nomes_classes)
 
     limite_cor = matriz.max() / 2 if matriz.size else 0
     for linha in range(matriz.shape[0]):
