@@ -20,8 +20,8 @@ A rede utiliza **NumPy** nos cálculos matemáticos e no treinamento. O Scikit-L
 | Acurácia no teste | **96,67%** |
 | Classificações corretas | 29 de 30 |
 | Classificações incorretas | 1 |
-| Cross-Entropy Loss no teste | 0,078004 |
-| Loss final no treinamento | 0,049669 |
+| Cross-Entropy Loss no teste | 0,081713 |
+| Loss final no treinamento | 0,048590 |
 | Acurácia final no treinamento | 97,50% |
 
 A matriz de confusão desta execução foi:
@@ -83,6 +83,8 @@ A arquitetura contém:
 - **Backpropagation:** calcula os gradientes dos pesos e vieses.
 - **Gradiente Descendente:** atualiza os parâmetros para reduzir o erro.
 - **One-Hot Encoding:** representa cada uma das três classes com um vetor de três posições.
+
+Os pesos são inicializados aleatoriamente com os métodos He e Xavier. Os vieses também começam com valores aleatórios pequenos, gerados por uma distribuição normal de média zero e desvio padrão 0,01.
 
 O treinamento é feito em lote completo: em cada época, os gradientes são calculados usando todas as 120 amostras de treinamento.
 
