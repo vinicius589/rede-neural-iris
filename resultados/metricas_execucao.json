@@ -4,7 +4,9 @@
         "epocas": 1000,
         "taxa_aprendizado": 0.1,
         "semente_aleatoria": 42,
-        "divisao_treino_teste": "80/20 estratificada"
+        "divisao_treino_teste": "80/20 estratificada",
+        "inicializacao_pesos": "aleatoria (He e Xavier)",
+        "inicializacao_vieses": "aleatoria normal, media 0 e desvio padrao 0.01"
     },
     "dados": {
         "total": 150,
@@ -34,13 +36,13 @@
     },
     "resultados": {
         "acuracia_teste": 0.9666666666666667,
-        "loss_teste": 0.07800374808298555,
+        "loss_teste": 0.0817131234398162,
         "acertos": 29,
         "erros": 1,
         "total_teste": 30,
         "epocas": 1000,
         "taxa_aprendizado": 0.1,
-        "loss_final_treinamento": 0.0496687952979667,
+        "loss_final_treinamento": 0.04859002880683922,
         "acuracia_final_treinamento": 0.975
     }
 }
