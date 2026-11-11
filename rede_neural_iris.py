@@ -71,14 +71,17 @@ class RedeNeuralIris:
             np.sqrt(2 / NUMERO_ENTRADAS),
             (NUMERO_ENTRADAS, NUMERO_NEURONIOS_OCULTOS),
         )
-        self.vieses_oculta = np.zeros((1, NUMERO_NEURONIOS_OCULTOS))
+        # Os vieses também começam com valores aleatórios pequenos, como pede o enunciado.
+        self.vieses_oculta = gerador.normal(
+            0, 0.01, (1, NUMERO_NEURONIOS_OCULTOS)
+        )
 
         self.pesos_oculta_saida = gerador.normal(
             0,
             np.sqrt(1 / NUMERO_NEURONIOS_OCULTOS),
             (NUMERO_NEURONIOS_OCULTOS, NUMERO_CLASSES),
         )
-        self.vieses_saida = np.zeros((1, NUMERO_CLASSES))
+        self.vieses_saida = gerador.normal(0, 0.01, (1, NUMERO_CLASSES))
 
         self.historico_loss = []
         self.historico_acuracia = []
@@ -403,6 +406,8 @@ def salvar_metricas_json(caminho, metricas, nomes_classes, quantidade_treino, di
             "epocas": EPOCAS,
             "taxa_aprendizado": TAXA_APRENDIZADO,
             "semente_aleatoria": SEMENTE_ALEATORIA,
+            "inicializacao_pesos": "aleatoria (He e Xavier)",
+            "inicializacao_vieses": "aleatoria normal, media 0 e desvio padrao 0.01",
             "divisao_treino_teste": "80/20 estratificada",
         },
         "dados": {
