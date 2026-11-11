@@ -45,7 +45,7 @@ Ao executar o programa no Windows, abre uma janela com quatro abas:
 - **Flores testadas:** lista as 30 amostras reservadas para avaliação. Ao selecionar uma linha, são exibidas as quatro medidas da flor, a espécie correta, a previsão da rede e as probabilidades para as três espécies.
 - **Gráficos de apoio:** reúne a evolução da loss, a evolução da acurácia no treinamento, a matriz de confusão e a distribuição das espécies. Os gráficos complementam as explicações, mas não são necessários para entender o fluxo do experimento.
 
-A imagem abaixo é um resumo estático do experimento em formato SVG, para visualização nítida diretamente no GitHub. Os gráficos também estão disponíveis em SVG nesta pasta. Ao executar o programa no Windows, as versões PNG são geradas automaticamente na pasta `resultados`.
+A imagem abaixo é um resumo estático do experimento em formato SVG, para visualização nítida diretamente no GitHub. Os gráficos de apoio são gerados em PNG automaticamente na pasta `resultados` quando o programa é executado no Windows.
 
 ![Resumo explicativo da rede neural Iris](resultados/painel_aprendizado_iris.svg)
 
@@ -98,13 +98,9 @@ A rede é treinada sem consultar o conjunto de teste. A avaliação final ocorre
 |---|---|
 | `painel_aprendizado_iris.svg` | Resumo visual vetorial com explicação da divisão dos dados, etapas e indicadores. |
 | `painel_aprendizado_iris.png` | Versão PNG gerada automaticamente na execução local. |
-| `evolucao_loss.svg` | Evolução da Cross-Entropy Loss no treinamento, em formato vetorial. |
 | `evolucao_loss.png` | Versão PNG gerada automaticamente na execução local. |
-| `evolucao_acuracia.svg` | Evolução da acurácia no conjunto de treinamento, em formato vetorial. |
 | `evolucao_acuracia.png` | Versão PNG gerada automaticamente na execução local. |
-| `matriz_confusao.svg` | Comparação entre as classes verdadeiras e as previsões no teste, em formato vetorial. |
 | `matriz_confusao.png` | Versão PNG gerada automaticamente na execução local. |
-| `distribuicao_especies.svg` | Distribuição das 150 amostras pelas medidas das pétalas, em formato vetorial. |
 | `distribuicao_especies.png` | Versão PNG gerada automaticamente na execução local. |
 | `previsoes_teste.csv` | As 30 amostras de teste, com as quatro medidas, espécie correta, previsão, resultado, confiança e três probabilidades. |
 | `metricas_execucao.json` | Configuração e métricas registradas na execução. |
@@ -163,10 +159,6 @@ projeto_rede_neural_iris/
 │   └── explicacao_do_projeto.md
 └── resultados/
     ├── painel_aprendizado_iris.svg
-    ├── matriz_confusao.svg
-    ├── evolucao_loss.svg
-    ├── evolucao_acuracia.svg
-    ├── distribuicao_especies.svg
     ├── previsoes_teste.csv
     └── metricas_execucao.json
 ```

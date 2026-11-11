@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+<title id="title">Resumo da Rede Neural Artificial Iris</title>
+<desc id="desc">Experimento com 150 flores, 120 para treinamento e 30 para teste. Rede neural 4-8-3, 1000 épocas, 96,67 por cento de acurácia.</desc>
+<rect width="1200" height="690" rx="24" fill="#f4f7fb"/>
+<rect x="32" y="30" width="1136" height="112" rx="18" fill="#19324d"/>
+<text x="68" y="77" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700">Rede Neural Artificial — Iris</text>
+<text x="68" y="112" fill="#d9e5f2" font-family="Segoe UI,Arial,sans-serif" font-size="17">Classificação supervisionada com uma rede 4–8–3 implementada manualmente em NumPy</text>
+<g font-family="Segoe UI,Arial,sans-serif">
+<rect x="32" y="164" width="270" height="132" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="58" y="205" fill="#526579" font-size="16">Conjunto Iris</text><text x="58" y="260" fill="#19324d" font-size="42" font-weight="700">150</text><text x="165" y="260" fill="#526579" font-size="16">flores</text>
+<rect x="324" y="164" width="270" height="132" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="350" y="205" fill="#526579" font-size="16">Aprendizagem</text><text x="350" y="260" fill="#2878b5" font-size="42" font-weight="700">120</text><text x="456" y="260" fill="#526579" font-size="16">amostras · 80%</text>
+<rect x="616" y="164" width="270" height="132" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="642" y="205" fill="#526579" font-size="16">Avaliação</text><text x="642" y="260" fill="#d18b19" font-size="42" font-weight="700">30</text><text x="738" y="260" fill="#526579" font-size="16">amostras · 20%</text>
+<rect x="908" y="164" width="260" height="132" rx="16" fill="#e8f4ee" stroke="#c6e5d2"/>
+<text x="934" y="205" fill="#3d6650" font-size="16">Acurácia no teste</text><text x="934" y="260" fill="#1e8054" font-size="42" font-weight="700">96,67%</text>
+<rect x="32" y="320" width="550" height="202" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="60" y="361" fill="#19324d" font-size="21" font-weight="700">O que a rede faz?</text>
+<text x="60" y="399" fill="#526579" font-size="16">Recebe quatro medidas de cada flor:</text>
+<text x="60" y="430" fill="#19324d" font-size="16">• comprimento e largura da sépala</text>
+<text x="60" y="460" fill="#19324d" font-size="16">• comprimento e largura da pétala</text>
+<text x="60" y="495" fill="#526579" font-size="15">E prevê Setosa, Versicolor ou Virginica.</text>
+<rect x="602" y="320" width="566" height="202" rx="16" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="630" y="361" fill="#19324d" font-size="21" font-weight="700">Como foi avaliada?</text>
+<text x="630" y="399" fill="#526579" font-size="16">As 120 flores de treinamento ajustam pesos e vieses.</text>
+<text x="630" y="430" fill="#526579" font-size="16">As 30 flores de teste ficam separadas durante o aprendizado.</text>
+<text x="630" y="470" fill="#1e8054" font-size="18" font-weight="700">29 acertos</text><text x="760" y="470" fill="#526579" font-size="16">e</text><text x="785" y="470" fill="#a45b20" font-size="18" font-weight="700">1 erro</text>
+<text x="630" y="500" fill="#526579" font-size="14">A única confusão foi uma Versicolor prevista como Virginica.</text>
+<rect x="32" y="548" width="1136" height="104" rx="16" fill="#e7edf5"/>
+<text x="60" y="585" fill="#19324d" font-size="18" font-weight="700">Etapas do aprendizado</text>
+<text x="60" y="620" fill="#40566d" font-size="16">Medidas → previsão (Forward Pass) → cálculo do erro → Backpropagation → ajuste dos parâmetros → repetição por 1.000 épocas.</text>
+</g>
+</svg>

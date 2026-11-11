@@ -1,0 +1,46 @@
+{
+    "configuracao": {
+        "arquitetura": "4-8-3",
+        "epocas": 1000,
+        "taxa_aprendizado": 0.1,
+        "semente_aleatoria": 42,
+        "divisao_treino_teste": "80/20 estratificada"
+    },
+    "dados": {
+        "total": 150,
+        "treinamento": 120,
+        "teste": 30,
+        "classes": [
+            "Setosa",
+            "Versicolor",
+            "Virginica"
+        ],
+        "distribuicao_treino_por_classe": {
+            "Setosa": 40,
+            "Versicolor": 40,
+            "Virginica": 40
+        },
+        "distribuicao_teste_por_classe": {
+            "Setosa": 10,
+            "Versicolor": 10,
+            "Virginica": 10
+        },
+        "medidas_de_entrada": [
+            "Comprimento da sepala (cm)",
+            "Largura da sepala (cm)",
+            "Comprimento da petala (cm)",
+            "Largura da petala (cm)"
+        ]
+    },
+    "resultados": {
+        "acuracia_teste": 0.9666666666666667,
+        "loss_teste": 0.07800374808298555,
+        "acertos": 29,
+        "erros": 1,
+        "total_teste": 30,
+        "epocas": 1000,
+        "taxa_aprendizado": 0.1,
+        "loss_final_treinamento": 0.0496687952979667,
+        "acuracia_final_treinamento": 0.975
+    }
+}
